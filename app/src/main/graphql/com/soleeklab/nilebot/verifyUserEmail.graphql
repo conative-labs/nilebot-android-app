@@ -1,0 +1,9 @@
+mutation verifyUserEmail(
+    $email:String!,
+    $code: String!) {
+
+    verifyUserEmail(
+        email:$email,
+        code: $code
+    )
+}

@@ -1,0 +1,26 @@
+mutation  modifyFarm(
+
+    $id: ID!
+    $name: String!
+    $type: FarmType!
+    $area: Float
+    $areaUnit :AreaUnitType!
+    $longitude: String
+    $latitude: String
+    $address: String
+    $timezome: String!
+
+) {
+    modifyFarm(
+        id: $id
+        name: $name
+        type: $type
+        area: $area
+        areaUnit: $areaUnit
+        longitude: $longitude
+        latitude: $latitude
+        address:  $address
+        timezone: $timezome
+    )
+
+}

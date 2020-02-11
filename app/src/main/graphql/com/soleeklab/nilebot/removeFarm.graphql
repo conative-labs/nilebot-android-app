@@ -1,0 +1,8 @@
+mutation  removeFarm(
+    $id: ID!
+) {
+    removeFarm(
+        id: $id
+    )
+
+}

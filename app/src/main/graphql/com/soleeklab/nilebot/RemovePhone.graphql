@@ -1,0 +1,8 @@
+mutation  removePhone(
+    $number: iPhoneNumber!
+) {
+    removePhone(
+        number: $number
+    )
+
+}

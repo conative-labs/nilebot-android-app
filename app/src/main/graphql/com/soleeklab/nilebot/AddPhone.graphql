@@ -1,0 +1,11 @@
+mutation  addPhone(
+    $number:iPhoneNumber!
+    $language: LanguageType!
+) {
+    addPhone(
+        number: $number
+        language: $language
+    )
+
+
+}

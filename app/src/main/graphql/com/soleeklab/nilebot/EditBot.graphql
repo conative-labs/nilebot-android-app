@@ -1,0 +1,14 @@
+mutation  modifyBot(
+    $id: ID!
+    $name: String
+    $rate: Int
+
+) {
+    modifyBot(
+        id: $id
+        rate: $rate
+        name: $name
+    )
+
+
+}

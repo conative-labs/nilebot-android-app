@@ -1,0 +1,20 @@
+query GetSensorsReadingByPondID($id: [ID!],$from :String!,$to :String!) {
+    ponds{
+        parameters(ids: $id) {
+            parameterID
+            sensor{
+                nameID
+                bot{
+                    botID
+                }
+            }
+            name
+            unit
+            readings(from:$from,to:$to){
+                value
+                isAlarm
+                time
+            }
+        }
+    }
+}

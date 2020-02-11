@@ -1,0 +1,9 @@
+mutation create(
+    $name: String!
+    $email: String
+    $phone:iPhoneNumber!
+    $password: String!
+) {
+    addUser(name: $name, email: $email, phone:$phone, password: $password)
+
+}

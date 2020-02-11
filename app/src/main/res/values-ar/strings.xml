@@ -1,0 +1,410 @@
+<resources>
+
+    <string name="sing_in">تسجيل الدخول</string>
+
+    <string name="hello_nile_bot">مرحبا بك في نايل بوت</string>
+
+    <string name="phone_number">رقم الهاتف</string>
+
+    <string name="password">كلمة السر</string>
+
+    <string name="forgot_password">نسيت كلمة السر ؟</string>
+
+    <string name="have_no_acc">ليس لديك حساب ؟</string>
+
+    <string name="create_new_acc">إنشاء حساب جديد ؟</string>
+    <string name="try_again">حاول مجددا</string>
+    <string name="text_yes">نعم</string>
+
+    <string name="text_no">لا</string>
+
+    <string name="text_ok">موافق</string>
+
+    <string name="text_loading">تحميل</string>
+
+
+    <string name="forgot_pass"><u>نسيت كلمة السر</u></string>
+
+    <string name="default_notification_channel_id">channel</string>
+
+    <!--errors-->
+
+
+    <string name="error_occured">حدث خطأ</string>
+
+    <string name="error_connection">لا يوجد اتصال بالإنترنت</string>
+
+    <string name="error_email_invalid">الإيميل خطأ</string>
+
+    <string name="error_required">مطلوب</string>
+
+    <string name="error_password_invalid">كلمة السر خطأ</string>
+
+    <string name="error_confirm_password">تأكيد كلمة السر غير متطابق</string>
+
+    <string name="error_phone_invalid">خطأ برقم الهاتف</string>
+
+    <string name="error_accept_policy">يجب الموافقة علي الشروط و الأحكام</string>
+
+    <string name="error_password_not_match">كلمة السر غير متطابقة</string>
+
+    <string name="error_password_short">كلمة السر لا بد ان تكون أكثر من 8 حروف</string>
+
+    <string name="error_terms_invalid">لم توافق علي الشروط و الأحكام</string>
+
+    <string name="error_code_invalid">Invalid Code</string>
+
+    <string name="no_connection">لا يوجد إتصال بالإنترنت</string>
+
+    <string name="oops">عذراً! حدث خطا غير متوقع، سوف يتم اصلاحه قريبا...</string>
+
+    <string name="restart_app">إعادة تشغيل التطبيق</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sing_up">إنشاء حساب جديد</string>
+
+    <string name="name">الإسم</string>
+
+    <string name="farm_name">اسم المزرعة\ الشركة</string>
+
+    <string name="email">الإيميل</string>
+
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+
+    <string name="accept_terms"><u><![CDATA[وافق علي الشروط و الأحكام]]></u></string>
+
+    <string name="please_enter_number">من فضلك أدخل رقم الهاتف لإرسال الكود</string>
+
+    <string name="send">إرسال</string>
+
+    <string name="please_enter_code">من فضلك أدخل الكود</string>
+
+    <string name="please_enter_code_sent">أدخل الكود المرسل إلي رقم الهاتف لتفعيل الحساب</string>
+
+    <string name="still">متبقي</string>
+
+    <string name="verify">تحقق</string>
+
+    <string name="resend">إعادة إرسال</string>
+
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="title_home">الرئيسية</string>
+
+    <string name="title_dashboard">لوحة التحكم</string>
+
+    <string name="title_notifications">الإشعارات</string>
+
+    <string name="settings">الإعدادات</string>
+
+    <string name="farms">المزارع</string>
+
+    <string name="no_farms">لا توجد مزارع ,اضف مزرعة</string>
+
+    <string name="add_farm">انشاء مزرعة</string>
+
+    <string name="language">اللغة</string>
+
+    <string name="enter_sequence_number">Enter Sequence number</string>
+
+    <string name="logout">خروج</string>
+
+    <string name="arabic">اللغة العربية</string>
+
+    <string name="english">English</string>
+
+    <string name="add_sequence_number">أضف رقم تسلسل</string>
+
+    <string name="farm_namee">اسم المزرعة</string>
+
+    <string name="farm_type">نوع المزرعة</string>
+
+    <string name="country_governrate">البلد - المحافظة</string>
+
+    <string name="location_on_map">تحديد موقع المزرعة علي الخريطة</string>
+
+    <string name="choose_measure_unit">اختر وحدة القياس</string>
+
+    <string name="meter">م²</string>
+
+    <string name="km">كم²</string>
+
+    <string name="acre">فدان</string>
+
+    <string name="area">مساحة المزرعة</string>
+
+    <string name="choose_location">اختر المكان</string>
+
+
+    <string name="title_activity_maps">الخريطة</string>
+
+    <string name="create_serial_inside">لا يوجد أجهزة , أضف جهاز</string>
+
+    <string name="add_serial">إنشاء</string>
+
+    <string name="add_pond">إضافة حوض</string>
+
+    <string name="pond_name">اسم الحوض</string>
+
+    <string name="pond_type">اختر نوع الحوض</string>
+
+    <string name="next">التالي</string>
+
+    <string name="choose_farm_type">اختر نوع المزرعة</string>
+
+    <string name="readings">القراءات</string>
+
+    <string name="co">C°</string>
+
+    <string name="server_error">خطأ بالسيرفر</string>
+
+    <string name="error_email_or_password">خطأ بالإيميل او كلمة المرور</string>
+
+    <string name="you_must_accept_terms">أوافق علي الشروط و الأحكام</string>
+
+    <string name="error_name_invalid">يجب ان يحتوي الإسم علي 4 أحرف علي الأقل</string>
+
+    <string name="error_signup">خطأ</string>
+
+    <string name="farm_added">تم إضافة المزرعة بنجاح</string>
+
+    <string name="no_ponds">لا يوجد أحواض , أضف حوض</string>
+
+    <string name="size">الحجم</string>
+
+    <string name="pond_shape">اختر شكل الحوض</string>
+
+    <string name="rectangle">مستطيل أو مربع</string>
+
+    <string name="cylinder">إسطواني</string>
+
+    <string name="length">الطول (بالمتر)</string>
+
+    <string name="width">العرض (بالمتر)</string>
+
+    <string name="height">العمق (بالمتر)</string>
+
+    <string name="diameter">القطر (بالمتر)</string>
+
+    <string name="is_there_aerationEquipment">هل يوجد معدات تهوية بالحوض ؟</string>
+
+    <string name="pond_count">عدد الأحواض</string>
+
+    <string name="choose_pond_type">اختر نوع الحوض</string>
+
+    <string name="water_type"> اختر مصدر مياه  الري</string>
+
+    <string name="fish_type">نوع الأسماك المستزرعة</string>
+
+    <string name="fish_count_in_pond">عدد الأسماك في الحوض</string>
+
+    <string name="feed_type">نوع العلف المستخدم</string>
+
+    <string name="choose_fish_feed">اختر نوع العلف</string>
+
+    <string name="edit">تعديل</string>
+
+    <string name="phone_number_email">الهاتف / الإيميل</string>
+
+    <string name="no_sensors">لا توجد نقط قياس , أضف نقطة قياس</string>
+
+    <string name="add_sensor">أضف الحساس</string>
+
+    <string name="cancel">إلغاء</string>
+
+    <string name="delete">حذف</string>
+
+    <string name="sure_to_delete_sensor">هل انت متأكد من حذف الحساس ؟</string>
+
+    <string name="excel_exported">تم إنشاء الملف</string>
+
+    <string name="time_start">بداية الوقت</string>
+
+    <string name="time_end">نهاية الوقت</string>
+
+    <string name="sensors">الحساسات</string>
+
+    <string name="filter">فلتر</string>
+
+    <string name="error_sensors_required">يجب اختيار حساس</string>
+
+    <string name="error_sensors_date">وقت النهاية قبل و قت البداية</string>
+
+    <string name="no_readings">لا يوجد قراءات</string>
+
+    <string name="error_permission">يجب تفعيل الصلاحيات من الإعدادات</string>
+
+    <string name="threshold_max">أعلي قيمة</string>
+
+    <string name="min_threshold">أقل قيمة</string>
+
+    <string name="add">إضافة</string>
+
+    <string name="sensor_updated">تم التعديل</string>
+
+    <string name="error_max">أعلي قيمة لا بد أن تكون أكبر من أقل قيمة</string>
+
+    <string name="no_notifications">لا يوجد إشعارات</string>
+
+    <string name="profile">الصفحة الشخصية</string>
+
+    <string name="edit_profile">تعديل الصفحة الشخصية</string>
+
+    <string name="country_prompt">اختر الدولة</string>
+
+    <string name="country">الدولة</string>
+
+    <string name="change_password">تغيير كلمة السر</string>
+
+    <string name="old_password">كلمة السر القديمة</string>
+
+    <string name="new_password">كلمة السر الجديدة</string>
+
+    <string name="ponds">الأحواض</string>
+
+    <string name="new_farm">مزرعة جديدة</string>
+
+    <string name="new_pond">حوض جديد</string>
+
+    <string name="edit_farm">تعديل المزرعة</string>
+
+    <string name="edit_pond">تعديل الحوض</string>
+
+    <string name="create_serial">Create Serial</string>
+
+    <string name="sure_to_pond">هل أنت متأكد من حذف الحوض ؟</string>
+
+    <string name="sure_to_delete_farm">  هل انت متأكد من مسح المزرعة \n ( سوف يؤدي مسح المزرعة الي مسح جميع الاحواض بداخلها بشكل دائم ) </string>
+
+    <string name="farm_location">مكان المزرعة</string>
+
+    <string name="save_location">حفظ المكان</string>
+
+    <string name="sensor_reads">قياسات الحساسات</string>
+
+    <string name="add_sensor_thresholds">أدخل قيم الحساس</string>
+
+    <string name="add_serial_btn">أضف جهاز</string>
+
+    <string name="devices">الأجهزة</string>
+
+    <string name="setial_number">أرقام التسلسل</string>
+
+    <string name="sure_to_logout">هل أنت متأكد من تسجيل الخروج ؟</string>
+
+    <string name="disconnected">تم الفصل</string>
+
+    <string name="chart">الرسم البياني</string>
+
+    <string name="notifications">الإشعارات</string>
+
+    <string name="sensor_num">عدد الحساسات : </string>
+
+    <string name="edit_bots">تعديل الأجهزة</string>
+
+    <string name="rate">معدل إرسال القياسات بالدقائق</string>
+
+    <string name="time_zone">التوقيت</string>
+
+    <string name="bot">تعريف الجهاز</string>
+
+    <string name="id">رقم التعريف</string>
+
+    <string name="add_bot">أضف جهاز</string>
+
+    <string name="error_rate">يجب أن يكون المعدل أكبر من صفر</string>
+
+    <string name="choose_time_zone">إختر التوقيت</string>
+
+    <string name="token">رقم السريال</string>
+
+    <string name="sw">SW</string>
+
+    <string name="hw">HW :</string>
+
+    <string name="add_devices">أدخل أجهزة</string>
+
+    <string name="summary">الملخص</string>
+
+    <string name="average">المتوسط</string>
+
+    <string name="no_data_to_export">لا يوجد قراءات</string>
+
+    <string name="filter_by_sensors">فلتر بالحساس</string>
+
+    <string name="phone_numbers">أرقام الهواتف</string>
+
+    <string name="add_phone">أضف هاتف</string>
+
+    <string name="edit_phone">تعديل الهاتف</string>
+    <string name="sure_to_delete_phone">هل أن متأكد من حذف الهاتف ؟</string>
+    <string name="sure_to_delete_bot">هل انت متأكد من حذف الجهاز ؟</string>
+    <string name="country_code_required">Country code required</string>
+    <string name="add_phone_numbers">إضافة أرقام الهواتف</string>
+    <string name="no_data">لا يوجد قراءة</string>
+    <string name="sing_up_new_acc">أنشيء حساب جديد</string>
+    <string name="no_phones">لا يوجد هواتف , أضف هاتف</string>
+    <string name="add_device">أضف جهاز</string>
+    <string name="session_expired">تم إنتهاء ال session</string>
+    <string name="edit_sensor_thresholds">تعديل قيم الحساس</string>
+    <string name="exit">خروج</string>
+    <string name="sure_to_exit">هل انت متأكد من الخروج</string>
+    <string name="error">خطأ</string>
+    <string name="pond_name_colon">اسم الحوض : </string>
+
+    <string name="please_enter_new_password">أدخل كلمة مرور جديدة</string>
+    <string name="reset_password">تعديل كلمة المرور</string>
+    <string name="choose_unit_type">إختر الوحدة</string>
+    <string name="all">الكل</string>
+    <string name="fish_count_required">عدد الأسماك مطلوب</string>
+    <string name="fish_count">عدد الأسماك في الحوض</string>
+    <string name="add_more">Add More</string>
+    <string name="pond_add_successfully">تم إضافة الحوض بنجاح</string>
+    <string name="no_ponds_found">لا يوجد أحواض</string>
+    <string name="sensor_name">اسم الحساس</string>
+    <string name="choose_bot">إختر الجهاز</string>
+    <string name="choose_sensor">إختر الحساس</string>
+    <string name="edit_sensor">تعديل الحساس</string>
+    <string name="add_parameter">أضف متغير</string>
+    <string name="edit_name">تعديل الإسم</string>
+    <string name="hint">ملاحظة</string>
+    <string name="email_verify">من فضلك التحقق من بريدك الإلكتروني ثم إضغط موافق</string>
+    <string name="edit_email">تعديل الإيميل</string>
+    <string name="edit_number">تعديل الهاتف</string>
+    <string name="device">الجهاز</string>
+    <string name="sensor">الحساس</string>
+    <string name="password_chagne_success">تم تغيير كلمة المرور بنجاح</string>
+    <string name="dear_farmer"> عزيزي المزارع .. تسجيلك لبيانات الحوض بدقة يساعدنا في ارشادك و دعمك لأفضل ممارسات الاستزراع خلال الموسم لتحقيق أعلي انتاجية</string>
+    <string name="water_type_hint">في حالة خلط أكثر من نوع يرجي تحديد المصدرين</string>
+    <string name="more_pond">هل تريد إضافة أحواض أخري ؟</string>
+    <string name="email_optional">البريد الالكتروني (اختياري)</string>
+    <string name="add_measurement">أضف نقطة قياس</string>
+    <string name="show_data"><u>اظهر القراءات</u></string>
+    <string name="param_name">اسم المتغير</string>
+    <string name="error_large">أدخل رقم صحيح</string>
+    <string name="used">مستخدم</string>
+    <string name="available">متاح</string>
+    <string name="disabled">موقوف</string>
+    <string name="error_required_unit">وحدة القياس مطلوبة</string>
+    <string name="select_date">اختر الوقت</string>
+    <string name="more_details">المزيد من التفاصيل</string>
+    <string name="set_time">تحديد</string>
+    <string name="success">تم بنجاح</string>
+
+    <string-array name="country_arrays">
+        <item>مصر</item>
+        <item>الولايات المتحدة الأمريكية</item>
+        <item>إندونسيا</item>
+        <item>فرنسا</item>
+        <item>إيطاليا</item>
+        <item>سنغافورة</item>
+        <item>نيوزلاند</item>
+        <item>الهند</item>
+    </string-array>
+
+
+</resources>

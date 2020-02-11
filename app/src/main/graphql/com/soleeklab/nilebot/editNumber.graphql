@@ -1,0 +1,6 @@
+mutation modifyUserPhone(
+    $phone:iPhoneNumber!
+
+) {
+    modifyUserPhone(phone:$phone)
+}

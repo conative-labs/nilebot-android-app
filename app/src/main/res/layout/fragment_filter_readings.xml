@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f7f7f6">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lay_bottom"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_toolbar"
+            layout="@layout/layout_toolbar" />
+
+        <RelativeLayout
+            android:id="@+id/view_sep"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/layout_toolbar"
+            android:background="#0256A3">
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/font_text_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_16"
+            android:layout_marginTop="@dimen/default_16"
+            android:fontFamily="@font/questv1"
+            android:text="@string/time_start"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/edt_from_time"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/default_16"
+            android:layout_marginTop="5dp"
+            android:gravity="center|start"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/round_view_white_stroke_gray"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorPrimary"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <TextView
+            android:id="@+id/txt_error_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_16"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/default_16"
+            android:fontFamily="@font/questv1"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+
+        <TextView
+            style="@style/font_text_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_16"
+            android:layout_marginTop="@dimen/default_16"
+            android:fontFamily="@font/questv1"
+            android:text="@string/time_end"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/edt_to_time"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/default_16"
+            android:gravity="center|start"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/round_view_white_stroke_gray"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorPrimary"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+
+        <TextView
+            android:id="@+id/txt_error_to_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_16"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/default_16"
+            android:fontFamily="@font/questv1"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_16"
+            android:layout_marginTop="@dimen/default_16"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/font_text_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/questv1"
+                android:text="@string/filter_by_sensors"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_error_sensor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_16"
+                android:fontFamily="@font/questv1"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_sensors_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_16"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_sensor_check" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/default_16"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="@dimen/default_16"
+            android:background="@drawable/round_view_white_stroke_gray"
+            android:foreground="?selectableItemBackground"
+            android:text="@string/cancel"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/default_16"
+            android:background="@drawable/round_corner_button_blue"
+            android:foreground="?selectableItemBackground"
+            android:text="@string/filter"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.auth.signup.SignUpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgound"
+        android:focusableInTouchMode="true">
+
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_16"
+            android:layout_marginTop="@dimen/default_16"
+            android:padding="5dp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="141dp"
+            android:padding="8dp"
+            android:layout_marginBottom="@dimen/default_16"
+            android:layout_height="132dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/splash_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/txt_sing_in"
+            style="@style/font_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sing_up"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+        <TextView
+            android:id="@+id/txt_sing_in_hello"
+            style="@style/font_text_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/hello_nile_bot"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_sing_in" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/txt_sing_in_hello">
+
+            <TextView
+                style="@style/font_text_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_16"
+                android:text="@string/name" />
+
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/round_corner_light_gray"
+                android:drawablePadding="5dp"
+                android:inputType="text"
+                android:paddingStart="@dimen/default_16"
+                android:paddingEnd="@dimen/default_16" />
+
+            <TextView
+                android:id="@+id/txt_error_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_16"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/default_16"
+                android:fontFamily="@font/questv1"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_sing_in_hello" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_16"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtphone_hint"
+                    style="@style/font_text_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_16"
+                    android:layout_toEndOf="@+id/lay_rel"
+                    android:includeFontPadding="false"
+                    android:text="@string/phone_number" />
+                <RelativeLayout
+                    android:id="@+id/lay_rel"
+                    android:layout_below="@+id/txtphone_hint"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinner_country_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:spinnerMode="dialog"
+                        android:layout_margin="8dp" />
+
+                    <EditText
+                        android:id="@+id/edt_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/round_corner_light_gray"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:textColor="#78797a"
+                        android:textSize="13sp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/txtphone_hint"
+                    android:layout_toEndOf="@+id/lay_rel"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/edt_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/round_corner_light_gray"
+                        android:drawablePadding="5dp"
+                        android:inputType="number"
+                        android:paddingStart="@dimen/default_16"
+                        android:paddingEnd="@dimen/default_16" />
+
+                    <TextView
+                        android:id="@+id/txt_error_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/default_16"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="@dimen/default_16"
+                        android:fontFamily="@font/questv1"
+                        android:textColor="@color/red"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_sing_in_hello" />
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/font_text_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_16"
+                android:layout_marginTop="@dimen/default_16"
+                android:text="@string/email_optional" />
+
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/round_corner_light_gray"
+                android:drawablePadding="5dp"
+                android:inputType="textEmailAddress"
+                android:paddingStart="@dimen/default_16"
+                android:paddingEnd="@dimen/default_16" />
+
+            <TextView
+                style="@style/font_text_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_16"
+                android:layout_marginTop="@dimen/default_16"
+                android:text="@string/country"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner_countries"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/default_16"
+                android:background="@drawable/spinner_custom_gray"
+                android:entries="@array/country_arrays"
+                android:prompt="@string/country_prompt"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_error_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_16"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/default_16"
+                android:fontFamily="@font/questv1"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_sing_in_hello" />
+
+
+            <TextView
+                style="@style/font_text_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_16"
+                android:layout_marginTop="16dp"
+                android:includeFontPadding="false"
+                android:text="@string/password" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:hintEnabled="false"
+                android:layout_marginEnd="16dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/round_corner_light_gray"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/default_16" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txt_error_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_16"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/default_16"
+                android:fontFamily="@font/questv1"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_sing_in_hello" />
+
+
+            <TextView
+                style="@style/font_text_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_16"
+                android:layout_marginTop="16dp"
+                android:text="@string/confirm_password" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etConfirmPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edt_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/round_corner_light_gray"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/default_16" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txt_error_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_16"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/default_16"
+                android:fontFamily="@font/questv1"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_sing_in_hello" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center"
+                android:layout_height="wrap_content">
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_accept_terms"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="41dp"
+
+                    android:foreground="?selectableItemBackground"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+
+                <TextView
+                    android:id="@+id/txt_accept_terms"
+                    style="@style/font_blue_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_must_accept_terms"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_error_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_16"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/default_16"
+                android:fontFamily="@font/questv1"
+                android:text="@string/you_must_accept_terms"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_sing_in_hello" />
+
+
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="30dp"
+                android:foreground="?selectableItemBackground"
+                android:background="@drawable/round_corner_button_blue"
+                android:text="@string/sing_up"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,23 @@
+query GetSensorsByPondID($id: [ID!]) {
+    ponds(ids: $id){
+        parameters {
+            parameterID
+            name
+            sensor{
+                nameID
+                bot{
+                    botID
+                    name
+                }
+            }
+            thresholdLow
+            thresholdHigh
+            unit
+            lastReading{
+                time
+                value
+                isAlarm
+            }
+        }
+    }
+}

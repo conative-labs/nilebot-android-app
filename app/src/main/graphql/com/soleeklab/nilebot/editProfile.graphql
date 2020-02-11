@@ -1,0 +1,6 @@
+mutation modifyUser(
+    $name: String
+
+) {
+    modifyUser(name: $name)
+}

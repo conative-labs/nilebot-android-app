@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="80dp"
+            android:visibility="visible" />
+
+
+        <RelativeLayout
+            android:id="@+id/lay_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/questv1"
+                android:text="@string/edit_sensor"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lay_sensor_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_header"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/lay_spinners"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/font_blue_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_16"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/device"
+                    android:textSize="@dimen/default_16" />
+
+                <Spinner
+                    android:id="@+id/spinner_bots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/default_16"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/default_16"
+                    android:background="@drawable/spinner_custom" />
+
+                <TextView
+                    android:id="@+id/txt_error_bot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_16"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/default_16"
+                    android:fontFamily="@font/questv1"
+                    android:text="@string/error_required"
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/font_blue_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/default_16"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/sensor"
+                        android:textSize="@dimen/default_16" />
+
+
+                </LinearLayout>
+
+
+                <Spinner
+                    android:id="@+id/spinner_sensors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/default_16"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/default_16"
+                    android:background="@drawable/spinner_custom"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/default_16"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/green" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/used" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/default_16"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/available" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/default_16"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorGray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/disabled" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_error_sensor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_16"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/default_16"
+                    android:fontFamily="@font/questv1"
+                    android:text="@string/error_required"
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lay_sensor_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_spinners"
+                android:layout_marginStart="@dimen/default_16"
+                android:layout_marginTop="@dimen/default_16"
+                android:layout_marginEnd="@dimen/default_16"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/lay_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        style="@style/font_blue_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/param_name"
+                        android:textSize="@dimen/default_16" />
+
+
+                    <EditText
+                        android:id="@+id/edt_sensor_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_view_white_stroke_gray"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/questv1"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/txt_error_sensor_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="@dimen/default_16"
+                        android:fontFamily="@font/questv1"
+                        android:textColor="@color/red"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_threshold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay_name"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/font_blue_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/min_threshold"
+                            android:textSize="@dimen/default_16" />
+
+
+                        <EditText
+                            android:id="@+id/edt_sensor_min"
+                            android:layout_width="match_parent"
+                            android:maxLength="9"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/round_view_white_stroke_gray"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/questv1"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp" />
+
+                        <TextView
+                            android:id="@+id/txt_error_sensor_min"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="@dimen/default_16"
+                            android:fontFamily="@font/questv1"
+                            android:textColor="@color/red"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/font_blue_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/threshold_max"
+                            android:textSize="@dimen/default_16" />
+
+
+                        <EditText
+                            android:id="@+id/edt_sensor_max"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="5dp"
+                            android:maxLength="9"
+                            android:background="@drawable/round_view_white_stroke_gray"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/questv1"
+                            android:inputType="number"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp" />
+
+                        <TextView
+                            android:id="@+id/txt_error_sensor_max"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="@dimen/default_16"
+                            android:fontFamily="@font/questv1"
+                            android:textColor="@color/red"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_error_sensor_threshold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay_threshold"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/default_16"
+                    android:fontFamily="@font/questv1"
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_sensor_data"
+                android:layout_marginTop="@dimen/default_16"
+                android:layout_marginBottom="22dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btn_add_sensor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/default_16"
+                    android:background="@drawable/round_corner_button_blue"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/edit_sensor"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="@dimen/default_16"
+                    android:background="@drawable/round_view_white_stroke_gray"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorText"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay_no_sensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_header"
+            android:layout_marginTop="@dimen/default_16"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_no_device" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/questv1"
+                android:gravity="center"
+                android:text="@string/no_sensors"
+                android:textColor="#8db3d5"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_16"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_cancel_add_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/default_16"
+                    android:background="@drawable/round_view_white_stroke_gray"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btn_go_to_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="@dimen/default_16"
+                    android:background="@drawable/round_corner_button_blue"
+                    android:text="@string/add_device"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_go_to_settings"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="40dp"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:layout_marginBottom="30dp"-->
+        <!--            android:background="@drawable/round_corner_button_blue"-->
+        <!--            android:paddingStart="@dimen/default_16"-->
+        <!--            android:paddingEnd="@dimen/default_16"-->
+        <!--            android:text="@string/create_serial"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:visibility="visible" />-->
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,22 @@
+query getBots {
+    user {
+        bots{
+            botID
+            name
+            rate
+            sw
+            hw
+            sensors{
+                nameID
+                parameter{
+                    parameterID
+                    name
+                    thresholdHigh
+                    thresholdLow
+                }
+                unit
+            }
+        }
+    }
+
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7fafc"
+    android:clickable="true"
+    tools:context=".features.home.farms.pond.pondDetails.PondSensorsReadings.chart.ChartFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:elevation="2dp"
+        android:background="@drawable/round_corner_whitee"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/default_16"
+        android:layout_marginStart="@dimen/default_16"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/btn_land_scape"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/default_16"
+        android:layout_marginTop="@dimen/default_16"
+        android:src="@drawable/full_size"
+        android:foreground="?selectableItemBackground"
+        android:layout_height="wrap_content"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/default_16"
+        android:layout_height="250dp"
+        android:layout_marginLeft="@dimen/default_16"
+        android:background="@color/white"
+        android:layout_below="@+id/btn_land_scape"
+        android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

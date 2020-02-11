@@ -1,0 +1,6 @@
+query GetTranslationLUT($lang: LanguageType!) {
+
+    translationLUT(language: $lang) {
+        txt,translation
+    }
+}

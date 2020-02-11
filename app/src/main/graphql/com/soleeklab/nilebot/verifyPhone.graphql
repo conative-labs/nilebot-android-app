@@ -1,0 +1,9 @@
+mutation verifyPhone(
+    $number:iPhoneNumber!,
+    $code: String!) {
+
+    verifyPhone(
+         number:$number,
+        code: $code
+    )
+}

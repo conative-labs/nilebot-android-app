@@ -1,0 +1,6 @@
+mutation modifyUserEmail(
+    $email: String!
+
+) {
+    modifyUserEmail(email: $email)
+}

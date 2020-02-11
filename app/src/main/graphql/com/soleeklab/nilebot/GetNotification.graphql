@@ -1,0 +1,10 @@
+query notifications($page: Int!,$markAsRead:Boolean) {
+    notifications(page:$page,markAsRead: $markAsRead){
+        unreadCount
+        notifications{
+            time
+            txt
+            unread
+        }
+    }
+}

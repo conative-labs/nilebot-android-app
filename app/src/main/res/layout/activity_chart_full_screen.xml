@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_corner_whitee"
+        android:elevation="2dp">
+
+
+        <ImageView
+            android:id="@+id/btn_land_scape"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/default_16"
+            android:layout_marginTop="@dimen/default_16"
+            android:foreground="?selectableItemBackground"
+            android:padding="3dp"
+            android:src="@drawable/small_size" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/btn_land_scape"
+            android:layout_marginLeft="@dimen/default_16"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/default_16"
+            android:background="@color/white" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

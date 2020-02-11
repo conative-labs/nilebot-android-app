@@ -1,0 +1,7 @@
+mutation  addSessionToken(
+    $token: String!
+    $deviceType: DeviceType!
+
+) {
+    setSessionToken(token: $token,deviceType:$deviceType)
+}

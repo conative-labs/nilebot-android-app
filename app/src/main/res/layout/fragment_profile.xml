@@ -1,0 +1,165 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swip_to_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f7fafc"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layout_toolbar"
+            layout="@layout/layout_toolbar" />
+
+        <RelativeLayout
+            android:id="@+id/view_sep"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/layout_toolbar"
+            android:background="#0256A3">
+
+        </RelativeLayout>
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f7fafc"
+            android:clickable="true"
+            tools:context=".features.auth.signup.SignUpFragment">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/font_text_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_16"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/name" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:drawablePadding="5dp"
+                        android:enabled="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/btn_edit_name"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_edit"
+                        android:padding="10dp"
+                        android:layout_marginEnd="@dimen/default_16"
+                        android:layout_alignParentEnd="true"
+                        android:layout_height="wrap_content"
+                        />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    style="@style/font_text_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_16"
+                    android:layout_marginTop="@dimen/default_16"
+                    android:text="@string/email" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/default_16"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:drawablePadding="5dp"
+                        android:enabled="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/btn_edit_mail"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_edit"
+                        android:padding="10dp"
+                        android:layout_marginEnd="@dimen/default_16"
+                        android:layout_alignParentEnd="true"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/font_text_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_16"
+                    android:layout_marginTop="@dimen/default_16"
+                    android:text="@string/phone_number" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/default_16"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="16dp"
+                        android:drawablePadding="5dp"
+                        android:layout_centerVertical="true"
+                        android:enabled="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/btn_edit_number"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_edit"
+                        android:padding="10dp"
+                        android:layout_marginEnd="@dimen/default_16"
+                        android:layout_alignParentEnd="true"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

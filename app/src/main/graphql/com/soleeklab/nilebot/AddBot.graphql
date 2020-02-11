@@ -1,0 +1,15 @@
+mutation  addBot(
+    $name: String!
+    $rate: Int!
+) {
+    addBot(
+
+        rate: $rate
+        name: $name
+    )
+    {
+        token
+        id
+    }
+
+}

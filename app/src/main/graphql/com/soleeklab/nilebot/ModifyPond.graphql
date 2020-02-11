@@ -1,0 +1,25 @@
+mutation  modifyPond(
+    $id: ID!
+    $name: String!
+    $type: PondType!
+    $waterSources: [WaterSourceType!]
+    $fishTypes: [iFishTypes!]!
+    $fishFeedType: FishFeedType!
+    $aerationEquipment: Boolean!
+    $length: Float!
+    $width: Float!
+    $depth: Float!
+) {
+    modifyPond(
+        id: $id
+        name: $name
+        type: $type
+        waterSources: $waterSources
+        fishTypes: $fishTypes
+        fishFeedType: $fishFeedType
+        aerationEquipment: $aerationEquipment
+        length: $length
+        width: $width
+        depth: $depth
+    )
+}

@@ -1,0 +1,12 @@
+query getPhones {
+    user {
+        phones{
+            language
+            number{
+                number
+                prefix
+            }
+        }
+    }
+
+}

@@ -1,0 +1,8 @@
+mutation  removePond(
+    $id: ID!
+) {
+    removePond(
+        id: $id
+    )
+
+}

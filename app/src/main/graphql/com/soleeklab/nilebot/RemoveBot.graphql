@@ -1,0 +1,7 @@
+mutation  removeBot(
+    $id: ID!
+
+) {
+    removeBot(id: $id)
+
+}

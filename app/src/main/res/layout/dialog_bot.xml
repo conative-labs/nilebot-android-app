@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/lay_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/txt_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/questv1"
+            android:text="@string/bot"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        style="@style/font_text_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/default_16"
+        android:fontFamily="@font/questv1"
+        android:gravity="center"
+        android:text="@string/id"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_id"
+        style="@style/font_text_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/default_16"
+        android:layout_marginEnd="@dimen/default_16"
+        android:fontFamily="@font/questv1"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="16sp" />
+
+    <TextView
+        style="@style/font_text_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/default_16"
+        android:fontFamily="@font/questv1"
+        android:gravity="center"
+        android:text="@string/token"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_token"
+        style="@style/font_text_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/default_16"
+        android:layout_marginBottom="@dimen/default_16"
+        android:layout_marginEnd="@dimen/default_16"
+        android:fontFamily="@font/questv1"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/default_16"
+        android:layout_marginEnd="@dimen/default_16"
+        android:foreground="?selectableItemBackground"
+        android:fontFamily="@font/questv1"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/round_corner_button_blue"
+        android:text="@string/text_ok"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

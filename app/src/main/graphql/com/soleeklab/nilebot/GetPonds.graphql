@@ -1,0 +1,21 @@
+query GetPondsByFarmID($id: [ID!]) {
+    farms(ids: $id) {
+        ponds{
+            pondID
+            name
+            type
+            waterSources
+            fishTypes{
+                count
+                type
+            }
+            fishFeedType
+            aerationEquipment
+            length
+            width
+            depth
+
+
+        }
+    }
+}

@@ -1,0 +1,14 @@
+mutation login($email: String, $phone:iPhoneNumber ,$password: String!) {
+    login(email: $email, phone:$phone  ,password: $password) {
+        status
+        token
+        user {
+            name
+            email
+            phone{
+                number
+                prefix
+            }
+        }
+    }
+}

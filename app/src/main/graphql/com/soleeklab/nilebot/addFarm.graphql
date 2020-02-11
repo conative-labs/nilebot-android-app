@@ -1,0 +1,23 @@
+mutation  addFarm(
+    $name: String!
+    $type: FarmType!
+    $area: Float!
+    $areaUnit :AreaUnitType!
+    $longitude: String!
+    $latitude: String!
+    $address: String!
+    $timezome: String!
+
+) {
+    addFarm(
+        name: $name
+        type: $type
+        area: $area
+        areaUnit: $areaUnit
+        longitude: $longitude
+        latitude: $latitude
+        address:  $address
+        timezone: $timezome
+    )
+
+}

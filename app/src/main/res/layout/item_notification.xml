@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/default_16"
+    android:elevation="2dp"
+    android:background="@drawable/round_light_corner_whitee"
+    android:layout_marginEnd="@dimen/default_16"
+    android:layout_marginBottom="@dimen/default_16"
+   >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_16"
+            android:layout_marginTop="@dimen/default_16"
+            android:layout_marginBottom="@dimen/default_16"
+            android:src="@drawable/nilebot_logo" />
+
+
+
+            <TextView
+                android:id="@+id/txt_notification_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/img_logo"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="@dimen/default_16"
+                android:layout_marginStart="@dimen/default_16"
+                android:fontFamily="@font/questv1"
+                android:maxLines="2"
+                android:text="A013-5asaf-qj98c-acsasc5-ads4a-asda4-548a18q"
+                android:textColor="#313A43"
+                android:textSize="16sp" />
+
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/txt_notification_name"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/default_16"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_16"
+            android:tint="@color/colorGray"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_calendar"
+            />
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/questv1"
+            android:maxLines="2"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorGray"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:tint="@color/colorGray"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_clock"
+            />
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/questv1"
+            android:maxLines="2"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorGray"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

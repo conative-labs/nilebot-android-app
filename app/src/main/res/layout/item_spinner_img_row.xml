@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:paddingStart="5dp"
+    android:layout_marginBottom="8dp">
+
+
+    <TextView
+        android:id="@+id/txt_country_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="left"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/questv1"
+        android:text="asdajsf aksjfkajs jqiwjf qwf"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="@dimen/default_16"
+        android:textColor="@color/colorText"
+        android:paddingBottom="8dp"
+        android:maxLines="1"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

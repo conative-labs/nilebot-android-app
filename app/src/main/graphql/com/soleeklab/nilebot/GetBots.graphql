@@ -1,0 +1,18 @@
+query getUserBots {
+   user{
+       bots{
+           botID
+           name
+           sensors{
+               nameID
+               parameter{
+                   name
+                   pondID
+                   thresholdHigh
+                   thresholdLow
+               }
+           }
+       }
+   }
+
+}

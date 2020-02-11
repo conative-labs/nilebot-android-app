@@ -1,0 +1,15 @@
+mutation  addParameter(
+    $sensor: iSensor!
+    $pondID: ID!
+    $name:String!
+    $thresholdLow: Float
+    $thresholdHigh: Float
+) {
+    addParameter(
+        sensor: $sensor
+        pondID: $pondID
+        name: $name
+        thresholdLow: $thresholdLow
+        thresholdHigh: $thresholdHigh
+    )
+}

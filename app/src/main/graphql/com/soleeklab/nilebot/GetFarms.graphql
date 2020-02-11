@@ -1,0 +1,19 @@
+    query GetFarms {
+        user {
+            farms {
+                farmID
+                name
+                type
+                area
+                areaUnit
+                latitude
+                longitude
+                address
+                timezone
+                ponds{
+                    name
+                    pondID
+                }
+            }
+        }
+    }
